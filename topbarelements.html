@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Like Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff0000; /* YouTube red color */
+            text-decoration: none;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-profile img {
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .user-profile span {
+            font-weight: bold;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .video-card .video-info {
+            padding: 10px;
+        }
+
+        .video-card h3 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .video-card p {
+            margin: 8px 0;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#" class="logo">YouTube</a>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="user-profile">
+            <img src="profile-picture.jpg" alt="User Profile">
+            <span>Username</span>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <img src="video-thumbnail1.jpg" alt="Video Thumbnail">
+            <div class="video-info">
+                <h3>Video Title 1</h3>
+                <p>Views: 1,000 | Uploaded 2 days ago (sample)</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="video-thumbnail2.jpg" alt="Video Thumbnail">
+            <div class="video-info">
+                <h3>Video Title 2</h3>
+                <p>Views: 500 | Uploaded 4 days ago (sample)</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
